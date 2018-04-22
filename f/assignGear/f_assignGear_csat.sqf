@@ -434,7 +434,18 @@ switch (_typeofUnit) do
 
 	case "rif":
 	{
-		_unit setUnitLoadout [["rhs_weap_akm","rhs_acc_dtkakm","","",["rhs_30Rnd_762x39mm",30],[],""],[],[],["Cre8ive_CU_Uniform_TShirt_Blue_Blue",[["ACRE_PRC343",1],["ACE_bloodIV_250",1],["ACE_fieldDressing",9]]],[],["B_FieldPack_oucamo",[["SmokeShell",2,1],["rhs_VOG25",4,1],["hlc_30Rnd_762x39_b_ak",6,30],["hlc_30Rnd_762x39_t_ak",2,30],["rhs_mag_rgo",2,1]]],"H_Bandanna_surfer","",[],["ItemMap","","","ItemCompass","ItemWatch",""]];
+		_rifLoadouts = 
+		[
+			[["rhs_weap_akm","rhs_acc_dtkakm","","",["rhs_30Rnd_762x39mm",30],[],""],[],[],["Cre8ive_CU_Uniform_TShirt_Blue_Blue",[["ACRE_PRC343",1],["ACE_bloodIV_250",1],["ACE_fieldDressing",9]]],[],["B_FieldPack_oucamo",[["SmokeShell",2,1],["hlc_30Rnd_762x39_b_ak",6,30],["hlc_30Rnd_762x39_t_ak",2,30],["rhs_mag_rgo",2,1]]],"H_Bandanna_surfer","",[],["ItemMap","","","ItemCompass","ItemWatch",""]],
+			[["rhs_weap_akm","rhs_acc_dtkakm","","",["rhs_30Rnd_762x39mm",30],[],""],[],[],["Cre8ive_CU_Uniform_TShirt_Camo_Grey",[["ACRE_PRC343",1],["ACE_bloodIV_250",1],["ACE_fieldDressing",9]]],[],["B_FieldPack_oli",[["SmokeShell",2,1],["hlc_30Rnd_762x39_b_ak",6,30],["hlc_30Rnd_762x39_t_ak",2,30],["rhs_mag_rgo",2,1]]],"H_Cap_grn_BI","",[],["ItemMap","","","ItemCompass","ItemWatch",""]],
+			[["rhs_weap_akm","rhs_acc_dtkakm","","",["rhs_30Rnd_762x39mm",30],[],""],[],[],["Cre8ive_CU_Uniform_Shirt_Orange_Tan",[["ACRE_PRC343",1],["ACE_bloodIV_250",1],["ACE_fieldDressing",9]]],[],["B_FieldPack_ocamo",[["SmokeShell",2,1],["hlc_30Rnd_762x39_b_ak",6,30],["hlc_30Rnd_762x39_t_ak",2,30],["rhs_mag_rgo",2,1]]],"H_Cap_brn_SPECOPS","",[],["ItemMap","","","ItemCompass","ItemWatch",""]],
+			[["rhs_weap_akm","rhs_acc_dtkakm","","",["rhs_30Rnd_762x39mm",30],[],""],[],[],["Cre8ive_CU_Uniform_Shirt_Cyan_Green",[["ACRE_PRC343",1],["ACE_bloodIV_250",1],["ACE_fieldDressing",9]]],[],["B_FieldPack_oucamo",[["SmokeShell",2,1],["hlc_30Rnd_762x39_b_ak",6,30],["hlc_30Rnd_762x39_t_ak",2,30],["rhs_mag_rgo",2,1]]],"rhs_beanie_green","",[],["ItemMap","","","ItemCompass","ItemWatch",""]],
+			[["rhs_weap_akm","rhs_acc_dtkakm","","",["rhs_30Rnd_762x39mm",30],[],""],[],[],["Cre8ive_CU_Uniform_Shirt_Red_Green",[["ACRE_PRC343",1],["ACE_bloodIV_250",1],["ACE_fieldDressing",9]]],[],["B_FieldPack_cbr",[["SmokeShell",2,1],["hlc_30Rnd_762x39_b_ak",6,30],["hlc_30Rnd_762x39_t_ak",2,30],["rhs_mag_rgo",2,1]]],"rhs_beanie","",[],["ItemMap","","","ItemCompass","ItemWatch",""]]
+		];
+	
+		_randomLoadout = selectRandom _rifLoadouts;
+	
+		_unit setUnitLoadout _randomLoadout;
 	};
 	
 	case "lat":
