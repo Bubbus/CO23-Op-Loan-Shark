@@ -164,8 +164,8 @@ class CfgDebriefing
 {
 	class End1
 	{
-		title = "Ending #1";
-		subtitle = "";
+		title = "Investment secured";
+		subtitle = "It was a matter of interest.";
 		description = "Please post to the AAR thread!";
 		// pictureBackground = "";
 		// picture = "";
@@ -174,8 +174,8 @@ class CfgDebriefing
 
 	class End2
 	{
-		title = "Ending #2";
-		subtitle = "";
+		title = "Investment lost";
+		subtitle = "We're in the red now.";
 		description = "Please post to the AAR thread!";
 		// pictureBackground = "";
 		// picture = "";
@@ -184,8 +184,8 @@ class CfgDebriefing
 
 	class End3
 	{
-		title = "Ending #3";
-		subtitle = "";
+		title = "Sole trader";
+		subtitle = "They'll pay for that.";
 		description = "Please post to the AAR thread!";
 		// pictureBackground = "";
 		// picture = "";
@@ -194,8 +194,8 @@ class CfgDebriefing
 
 	class End4
 	{
-		title = "Ending #4";
-		subtitle = "";
+		title = "Backed out of the deal";
+		subtitle = "It's not time for a hostile takeover.";
 		description = "Please post to the AAR thread!";
 		// pictureBackground = "";
 		// picture = "";

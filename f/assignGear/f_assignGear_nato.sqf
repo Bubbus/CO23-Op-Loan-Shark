@@ -434,7 +434,7 @@ switch (_typeofUnit) do
 	
 	case "zeus":
 	{
-		_unit setUnitLoadout [["arifle_CTARS_ghex_F","","rhsusf_acc_anpeq15A","optic_ACO_grn",["100Rnd_580x42_Mag_F",100],[],""],[],["Press_Mic_BBC_F","","","",[],[],""],["rhsgref_uniform_ttsko_urban",[["ACE_fieldDressing",6],["ACE_morphine",6],["ACRE_PRC343",1],["ACE_bloodIV",1],["ACE_MapTools",1]]],["V_PlateCarrier1_rgr",[["ACE_Flashlight_XL50",1],["rhs_mag_rgo",6,1],["O_IR_Grenade",1,1],["ACE_Chemlight_Orange",2,1],["100Rnd_580x42_Mag_Tracer_F",4,100]]],["B_TacticalPack_rgr",[["ACE_CableTie",2],["100Rnd_580x42_Mag_Tracer_F",6,100]]],"rhsgref_helmet_pasgt_un","",["Rangefinder","","","",[],[],""],["ItemMap","ItemGPS","","ItemCompass","ItemWatch",""]];
+		_unit setUnitLoadout [["arifle_CTARS_ghex_F","","rhsusf_acc_anpeq15A","optic_ACO_grn",["100Rnd_580x42_Mag_F",100],[],""],[],["ACE_VMM3","","","",[],[],""],["rhsgref_uniform_ttsko_urban",[["ACE_fieldDressing",6],["ACE_morphine",6],["ACRE_PRC343",1],["ACE_bloodIV",1],["ACE_MapTools",1]]],["V_PlateCarrier1_rgr",[["ACE_Flashlight_XL50",1],["rhs_mag_rgo",6,1],["O_IR_Grenade",1,1],["ACE_Chemlight_Orange",2,1],["100Rnd_580x42_Mag_Tracer_F",4,100]]],["B_TacticalPack_rgr",[["ACE_CableTie",2],["100Rnd_580x42_Mag_Tracer_F",6,100]]],"rhsgref_helmet_pasgt_un","",["Rangefinder","","","",[],[],""],["ItemMap","ItemGPS","","ItemCompass","ItemWatch",""]];
 	};
 	
 	

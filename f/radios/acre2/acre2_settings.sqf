@@ -18,11 +18,11 @@ f_radios_settings_acre2_disableFrequencySplit = FALSE;
 f_radios_settings_acre2_shortRange = nil;
 
 // Set the list of units that get a long range
-f_radios_settings_acre2_longRange = ["co", "dc", "ftl", "sl", "zeus"];
+f_radios_settings_acre2_longRange = [];
 
 // Unit types you want to give an extra long-range radio
 // E.G: ["co", "m"] would give the CO and all medics an extra long-range radios
-f_radios_settings_acre2_extraRadios = [];
+f_radios_settings_acre2_extraRadios = ["co", "dc", "ftl", "sl", "zeus"];
 
 // Unit types you want to give a backpack radio
 // I'd recommend this is only used for Pilots and FAC (you'll need to sort out a separate FAC loadout in your gearscript, I'd recommend using the "UAV" unit type defined below.)

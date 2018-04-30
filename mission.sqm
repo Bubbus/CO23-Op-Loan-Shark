@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={17636.611,358.9834,2185.9172};
-		dir[]={0.78060132,-0.50247371,-0.37180978};
-		up[]={0.45365468,0.86458302,-0.21608105};
-		aside[]={-0.43003446,1.2200326e-007,-0.90284163};
+		pos[]={16300.872,54.280128,1629.5966};
+		dir[]={0.19707021,-0.55159122,0.81054884};
+		up[]={0.13031684,0.83410174,0.53599244};
+		aside[]={0.97172332,1.9650906e-007,-0.23625717};
 	};
 };
 binarizationWanted=0;
@@ -61,13 +61,15 @@ addons[]=
 	"HLC_COMPAT_RHS_AK",
 	"ace_compat_rhs_afrf3",
 	"Cre8ive_Civilian_Units",
-	"hlcweapons_aks"
+	"hlcweapons_aks",
+	"A3_Weapons_F_Exp_Rifles_CTARS",
+	"ace_minedetector"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=33;
+		items=34;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -295,6 +297,13 @@ class AddonsMetaData
 			name="hlcweapons_aks";
 			author="toadie";
 		};
+		class Item33
+		{
+			className="ace_minedetector";
+			name="ACE3 - Mine Detector";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
 	};
 };
 randomSeed=1116085;
@@ -368,12 +377,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15896.666,-12.858805,1484.1016};
+				position[]={15896.666,-12.858603,1484.1021};
 			};
 			init="call{this addCuratorEditableObjects [(vehicles + allUnits),true];}";
 			id=106;
 			type="ModuleCurator_F";
-			atlOffset=0.87681007;
+			atlOffset=0.87699986;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -391,7 +400,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="#adminLogged";
+							value="zeus_ply";
 						};
 					};
 				};
@@ -479,12 +488,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15896.666,-9.7223158,1404.1016};
+				position[]={15896.666,-9.7223635,1404.1021};
 			};
 			init="call{this addCuratorEditableObjects [(vehicles + allUnits),true];}";
 			id=107;
 			type="ModuleCurator_F";
-			atlOffset=0.63405132;
+			atlOffset=0.63399982;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -502,7 +511,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="#adminLogged";
+							value="#adminVoted";
 						};
 					};
 				};
@@ -654,11 +663,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15916.666,-13.565925,1464.1016};
+				position[]={15916.666,-13.565966,1464.1021};
 			};
 			id=1107;
 			type="ACE_moduleMedicalSettings";
-			atlOffset=0.63405132;
+			atlOffset=0.63399982;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1020,11 +1029,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15956.666,-12.365405,1464.1016};
+				position[]={15956.666,-12.365419,1464.1021};
 			};
 			id=1111;
 			type="ACE_moduleReviveSettings";
-			atlOffset=0.63405132;
+			atlOffset=0.63399982;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1042,7 +1051,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=-1;
+							value=1;
 						};
 					};
 				};
@@ -1080,7 +1089,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=600;
+							value=30;
 						};
 					};
 				};
@@ -1747,7 +1756,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -2363,7 +2372,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -2980,7 +2989,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -3556,7 +3565,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -7494,6 +7503,133 @@ class Mission
 						description="Zeus Player";
 						isPlayer=1;
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="arifle_CTARS_ghex_F";
+								optics="optic_ACO_grn";
+								flashlight="rhsusf_acc_anpeq15A";
+								class primaryMuzzleMag
+								{
+									name="100Rnd_580x42_Mag_F";
+									ammoLeft=100;
+								};
+							};
+							class handgun
+							{
+								name="ACE_VMM3";
+							};
+							class binocular
+							{
+								name="Rangefinder";
+							};
+							class uniform
+							{
+								typeName="rhsgref_uniform_ttsko_urban";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="ACE_fieldDressing";
+										count=6;
+									};
+									class Item1
+									{
+										name="ACE_morphine";
+										count=6;
+									};
+									class Item2
+									{
+										name="ACRE_PRC343";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACE_bloodIV";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_MapTools";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_PlateCarrier1_rgr";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="rhs_mag_rgo";
+										count=6;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="O_IR_Grenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="ACE_Chemlight_Orange";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="100Rnd_580x42_Mag_Tracer_F";
+										count=4;
+										ammoLeft=100;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="ACE_Flashlight_XL50";
+										count=1;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="B_TacticalPack_rgr";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="100Rnd_580x42_Mag_Tracer_F";
+										count=6;
+										ammoLeft=100;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="ACE_CableTie";
+										count=2;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							gps="ItemGPS";
+							headgear="rhsgref_helmet_pasgt_un";
+						};
 					};
 					id=1313;
 					type="B_Soldier_A_F";
@@ -7578,7 +7714,7 @@ class Mission
 						class Attribute4
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -7640,6 +7776,37 @@ class Mission
 			{
 			};
 			id=1312;
+		};
+	};
+	class Connections
+	{
+		class LinkIDProvider
+		{
+			nextID=2;
+		};
+		class Links
+		{
+			items=2;
+			class Item0
+			{
+				linkID=0;
+				item0=106;
+				item1=1313;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item1
+			{
+				linkID=1;
+				item0=793;
+				item1=1313;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
 		};
 	};
 };
