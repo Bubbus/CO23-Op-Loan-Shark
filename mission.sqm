@@ -742,7 +742,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0.25;
 						};
 					};
 				};
@@ -1089,7 +1089,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=30;
+							value=60;
 						};
 					};
 				};
@@ -1101,11 +1101,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15916.666,-12.95786,1444.1016};
+				position[]={15916.666,-12.957936,1444.1021};
 			};
 			id=1112;
 			type="ACE_moduleRepairSettings";
-			atlOffset=0.63405132;
+			atlOffset=0.63399982;
 			class CustomAttributes
 			{
 				class Attribute0
